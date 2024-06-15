@@ -1,0 +1,66 @@
+body {
+    background-image: url("./background.png");
+    background-repeat: repeat-y;
+}
+
+.card {
+    height: 100vh;
+    width: 100vw;
+}
+
+#next-arrow {
+    opacity: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
+}
+
+#next-arrow img {
+    width: 30vw;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 1.0;
+    }
+}
+
+.blink {
+    animation: blink 1s step-start 0s 3;
+}
+
+.clue {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 2vw;
+    position: absolute;
+    top: 20%;
+    font-family: "Comic Neue";
+    font-size: 4vh;
+}
+
+.button {
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 2vw;
+    background-color: rgb(43, 43, 214);
+    color: whitesmoke;
+}
+
+.button.loading {
+    background-color: cadetblue;
+}
+
+#stage-2,
+#stage-3,
+#stage-4,
+#stage-5 {
+    display: none;
+}
+
+
+input[type=number] {
+    height: 4vw;
+}
