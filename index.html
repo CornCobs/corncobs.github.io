@@ -2,6 +2,7 @@
 
 <html>
     <head>
+        <title>Where is the Promised Land?</title>
         <link rel="stylesheet" href="index.css"/>
         <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,20 +10,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="card" id="stage-0">
+            <div class="clue">
+                <h1>Finding the Promised Land</h1>
+                <div class="button" id="stage-0-button">Begin</div>
+            </div>
+        </div>
         <div class="card" id="stage-1">
             <div class="clue">
-                <h3>Stage 1: Transportation</h3>
+                <h3>Take a bus to this place</h3>
+                <div class="image-container"><div><img src="1.jpg"/></div></div>
                 <p>Clue: Where is this verse found?</p>
                 <p>"Lot also, who went with Abram, had flocks and herds and tents."</p>
-                <input type="number" id="lat"/>
-                <input type="number" id="lng"/>
                 <div class="button" id="stage-1-button">I'm here</div>
             </div>
         </div>
-        <div class="card" id="stage-2"></div>
-        <div class="card" id="stage-3"></div>
-        <div class="card" id="stage-4"></div>
+        <div class="card" id="stage-2">
+            <div class="clue">
+                <h3>Find this thing</h3>
+                <div class="image-container"><div><img src="2.jpg"/></div></div>
+                <div class="button" id="stage-2-button">I'm here</div>
+            </div>
+        </div>
+        <div class="card" id="stage-3">
+            <div class="clue">
+                <h3>Find this creature</h3>
+                <div class="image-container"><div><img src="3.jpg"/></div></div>
+                <div class="button" id="stage-3-button">I'm here</div>
+            </div>
+        </div>
+        <div class="card" id="stage-4">
+            <div class="clue">
+                <h3>Find this sign</h3>
+                <div class="image-container"><div><img src="4.jpg"/></div></div>
+                <div class="button" id="stage-4-button">I'm here</div>
+            </div>
+        </div>
         <div class="card" id="stage-5"></div>
+        <div id="wrong"><img src="X.png"/></div>
         <div id="next-arrow"><img src="arrow.png"/></div>
         <script src="game.js"></script>
     </body>
